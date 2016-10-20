@@ -1,0 +1,11 @@
+https://danielmiessler.com/study/tcpdump/#gs.Cek5OlA
+http://engineering.pivotal.io/post/network-traffic-monitoring-with-containers/
+https://github.com/crccheck/docker-tcpdump
+http://www.rationallyparanoid.com/articles/tcpdump.html
+https://www.wains.be/pub/networking/tcpdump_advanced_filters.txt
+
+# capture ascii on docker interface
+ tcpdump -n -A -S -i docker0 > trace.txt
+
+# capture also hex on docker interface
+ tcpdump -n -X -S -i docker0 > trace.txt
